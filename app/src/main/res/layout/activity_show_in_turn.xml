@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".show.ShowInTurnActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="?attr/materialThemeOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/teal_700"
+        app:menu="@menu/show_menu">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ib_back"
+            android:layout_width="48sp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/back"
+            android:backgroundTint="@color/teal_700"
+            app:icon="@drawable/baseline_arrow_back_36"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="2sp"
+            android:text="@string/imageTitle"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!--viewPager-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/baseline_play_circle_filled_24"
+        android:contentDescription="@string/silderShow"
+        android:layout_margin="16dp" />
+    </FrameLayout>
+</LinearLayout>

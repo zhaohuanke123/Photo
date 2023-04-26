@@ -1,0 +1,41 @@
+@startuml
+class com.vands.photo.mainhome.GridAdapter {
+- ArrayList<ImageModel> imageList
+- MainActivity mainActivity
+- Listener callback
++ void setImageFiles(ArrayList<ImageModel>)
++ ArrayList<ImageModel> getImageFiles()
+~ void toggleSelected(int)
++ MainViewHolder onCreateViewHolder(ViewGroup,int)
++ void onBindViewHolder(MainViewHolder,int)
++ void setSelectAll()
++ void setSelectNone()
++ void setSelectReverse()
++ void setSelectDelete()
++ void setSelected(int,boolean)
++ boolean contains(int)
++ boolean isIndexSelectable(int)
++ int getItemCount()
+}
+interface com.vands.photo.mainhome.GridAdapter.Listener {
+~ void onClick(int)
+~ void onLongClick(int)
+~ void onSelectionChanged(int)
+}
+class com.vands.photo.mainhome.GridAdapter.MainViewHolder {
+- Listener callback
+~ ImageView imageView
+~ TextView textView
++ void onClick(View)
++ boolean onLongClick(View)
+}
+
+
+com.vands.photo.IDragSelectAdapter <|.. com.vands.photo.mainhome.GridAdapter
+com.vands.photo.mainhome.Adapter <|-- com.vands.photo.mainhome.GridAdapter
+com.vands.photo.mainhome.GridAdapter +.. com.vands.photo.mainhome.GridAdapter.Listener
+com.vands.photo.mainhome.GridAdapter +.. com.vands.photo.mainhome.GridAdapter.MainViewHolder
+com.vands.photo.mainhome.OnClickListener <|.. com.vands.photo.mainhome.GridAdapter.MainViewHolder
+com.vands.photo.mainhome.OnLongClickListener <|.. com.vands.photo.mainhome.GridAdapter.MainViewHolder
+com.vands.photo.mainhome.ViewHolder <|-- com.vands.photo.mainhome.GridAdapter.MainViewHolder
+@enduml

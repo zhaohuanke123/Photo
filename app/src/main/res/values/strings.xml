@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Photo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="photo">图片</string>
+    <string name="fileName">文件名</string>
+    <string name="modifyTime">修改日期</string>
+    <string name="menu">菜单</string>
+    <string name="action_settings">设置</string>
+    <string name="action_copy">复制</string>
+    <string name="action_paste">粘贴</string>
+    <string name="action_retrun">退出</string>
+    <string name="action_delete">删除</string>
+    <string name="action_cnacel_select">取消选中</string>
+    <string name="select_all">全选</string>
+    <string name="select_reverse">反选</string>
+    <string name="photo_detail">图片详情</string>
+    <string name="share">分享</string>
+    <string name="setAsWallpaper">设为壁纸</string>
+    <string name="ImageName">图片名称</string>
+    <string name="ImageSize">图片大小</string>
+    <string name="ImagePath">图片路径</string>
+    <string name="ImageDate">图片日期</string>
+    <string name="back">返回</string>
+    <string name="detail">详情</string>
+    <string name="empty">暂无数据，请在左侧目录中长按选择一个含图片的文件夹打开</string>
+    <string name="action_rename">重命名</string>
+    <string name="SilderShow">幻灯片播放</string>
+    <string name="search">搜索</string>
+    <string name="sort">排序</string>
+    <string name="tab">tab栏</string>
+    <string name="image_count">| 已选中 %d 张</string>
+    <!--    有按照名称排序，按照时间排序，按照大小排序，三个都是升序和降序， 命名按照sort_by_xx_asc-->
+    <string name="sort_by_name_asc">按名称升序</string>
+    <string name="sort_by_name_desc">按名称降序</string>
+    <string name="sort_by_time_asc">按时间升序</string>
+    <string name="sort_by_time_desc">按时间降序</string>
+    <string name="sort_by_size_asc">按大小升序</string>
+    <string name="sort_by_size_desc">按大小降序</string>
+    <string name="imageTitle">图片标题</string>
+    <string name="silderShow">幻灯片播放</string>
+    <string name="action_tips">使用提示</string>
+    <string name="action_cut">剪切</string>
+    <string name="filename">文件名</string>
+    <string name="modifyDate">修改日期</string>
+    <string name="toapp">进入APP</string>
+
+    <string name="menu_info">Info</string>
+    <string name="menu_crop">Crop</string>
+    <string name="example_image_cropping">Image cropping</string>
+</resources>

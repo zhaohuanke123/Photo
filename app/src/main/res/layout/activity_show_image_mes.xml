@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".show.ShowImageMesActivity">
+
+    <!--    appbar,显示一个返回按钮-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_show_image_mes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ib_back"
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:backgroundTint="@color/teal_700"
+            android:contentDescription="@string/back"
+            app:icon="@drawable/baseline_arrow_back_36" />
+
+        <TextView
+            android:id="@+id/tv_show_image_mes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/detail"
+            android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--    recyclerView 两列显示图片信息, 两行之间 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_show_image_mes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10sp"
+        android:scrollbarSize="4sp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

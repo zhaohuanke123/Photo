@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mainhome.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="?attr/materialThemeOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal_700"
+        app:menu="@menu/head_menu"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/app_name"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <!--            一个排序按钮，src使用android/drawable 里面的素材-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sort"
+                android:layout_width="48sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2sp"
+                android:backgroundTint="@color/teal_700"
+                android:contentDescription="@string/sort"
+                android:gravity="center"
+                app:icon="@drawable/baseline_filter_list_24" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/search"
+                android:layout_width="48sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2sp"
+                android:backgroundTint="@color/teal_700"
+                android:contentDescription="@string/search"
+                android:gravity="center"
+                app:icon="@drawable/baseline_search_24" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sliderShow"
+                android:layout_width="48sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2sp"
+                android:backgroundTint="@color/teal_700"
+                android:contentDescription="@string/SilderShow"
+                android:gravity="center"
+                app:icon="@drawable/baseline_play_circle_filled_24" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#1effffff"
+        android:contentDescription="@string/tab"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/teal_700"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/teal_700"
+        app:tabTextColor="@color/teal_700"
+        app:tabUnboundedRipple="true" />
+
+    <!--   用于主页，显示两个页面 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/Pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1effffff" />
+
+</LinearLayout>

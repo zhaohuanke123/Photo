@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    // 有按照名称排序，按照时间排序，按照大小排序，三个都是升序和降序， 命名按照sort_by_xx_asc -->
+    <item
+        android:id="@+id/sort_by_name_asc"
+        android:title="@string/sort_by_name_asc" />
+    <item
+        android:id="@+id/sort_by_name_desc"
+        android:title="@string/sort_by_name_desc" />
+    <item
+        android:id="@+id/sort_by_time_asc"
+        android:title="@string/sort_by_time_asc" />
+    <item
+        android:id="@+id/sort_by_time_desc"
+        android:title="@string/sort_by_time_desc" />
+    <item
+        android:id="@+id/sort_by_size_asc"
+        android:title="@string/sort_by_size_asc" />
+    <item
+        android:id="@+id/sort_by_size_desc"
+        android:title="@string/sort_by_size_desc" />
+
+</menu>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_tips"
+        android:orderInCategory="100"
+        android:title="@string/action_tips"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_rename"
+        android:orderInCategory="100"
+        android:title="@string/action_rename"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_copy"
+        android:orderInCategory="100"
+        android:title="@string/action_copy"
+        app:showAsAction="never"  />
+    <item
+        android:id="@+id/action_cut"
+        android:orderInCategory="100"
+        android:title="@string/action_cut"
+        app:showAsAction="never"  />
+    <item
+        android:id="@+id/action_paste"
+        android:orderInCategory="100"
+        android:title="@string/action_paste"
+        app:showAsAction="never"  />
+    <item
+        android:id="@+id/action_select_all"
+        android:orderInCategory="100"
+        android:title="@string/select_all"
+        app:showAsAction="never"  />
+    <item
+        android:id="@+id/action_cnacel_select"
+        android:orderInCategory="100"
+        android:title="@string/action_cnacel_select"
+        app:showAsAction="never"  />
+    <item
+        android:id="@+id/action_select_reverse"
+        android:orderInCategory="100"
+        android:title="@string/select_reverse"
+        app:showAsAction="never"  />
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="100"
+        android:title="@string/action_delete"
+        app:showAsAction="never"  />
+    <item
+        android:id="@+id/action_retrun"
+        android:orderInCategory="100"
+        android:title="@string/action_retrun"
+        app:showAsAction="never"  />
+</menu>
